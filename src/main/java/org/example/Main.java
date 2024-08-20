@@ -1,5 +1,5 @@
 package org.example;
-
+/*
 // Задача 1
 // Программа должна выводить в консоль числа от 0 до 1000,
 // которые делятся на 3, но не делятся на 5.
@@ -26,5 +26,24 @@ public class Main {
             }
         }
         System.out.println("\nКоличество чисел, которые делятся на 3, но не делятся на 5: " + count);
+    }
+}*/
+
+// Задача 2
+// Программа должна поменять значение переменных не используя третью переменную.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число a: ");
+        int a = scanner.nextInt();
+        System.out.print("Введите число b: ");
+        int b = scanner.nextInt();
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("a = " + a + ", b = " + b);
     }
 }
