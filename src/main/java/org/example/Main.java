@@ -31,7 +31,7 @@ public class Main {
 
 // Задача 2
 // Программа должна поменять значение переменных не используя третью переменную.
-
+/*
 import java.util.Scanner;
 
 public class Main {
@@ -46,4 +46,4 @@ public class Main {
         a = a - b;
         System.out.println("a = " + a + ", b = " + b);
     }
-}
+}*/
