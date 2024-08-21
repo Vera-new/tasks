@@ -47,3 +47,23 @@ public class Main {
         System.out.println("a = " + a + ", b = " + b);
     }
 }*/
+
+// Задача 3
+//Перевернуть строку не используя reverse().
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите строку: ");
+        String str = scanner.nextLine();
+        StringBuilder builder = new StringBuilder();
+        String reversedStr = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            builder.append(str.charAt(i));
+        }
+        System.out.println("Перевернутая строка: " + builder);
+    }
+}
+
