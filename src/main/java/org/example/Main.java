@@ -68,7 +68,7 @@ public class Main {
 
 //Задача 4.
 // Вводится строка, состоящая из слов, разделенных пробелами. Необходимо вывести в консоль первые буквы каждого слова.
-
+/*
 import java.util.Scanner;
 
 public class Main {
@@ -82,4 +82,24 @@ public class Main {
         }
         System.out.println();
     }
+}*/
+
+// Задача 5.
+// Вводится строка, состоящая из слов, разделенных пробелами. Необходимо вывести в консоль последние буквы каждого слова.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.print("Введите строку: ");
+        Scanner scan = new Scanner(System.in);
+        String text = scan.nextLine();
+        String [] words = text.split(" ");
+        for (String word : words) {
+            char [] chars = word.toCharArray();
+            System.out.print(chars[chars.length-1]);
+        }
+        System.out.println();
+    }
 }
+
